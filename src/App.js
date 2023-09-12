@@ -1,20 +1,14 @@
 
-import Usereffect from './components/Usereffect'
+
+import Userref from './components/Userref'
 
 
-import { useState, useEffect } from 'react'
-let url =  "https://official-joke-api.appspot.com/random_joke"
 
 const App = () => {
-  const [data, setData]  = useState({})   ; 
+ 
 
 
 
-  useEffect( ()=>{
-    fetch(url)
-    .then (response => response.json()) 
-    .then ( json => setData (json) )
-  },[])
 
 
 
@@ -22,7 +16,7 @@ const App = () => {
 
     <div>
       <h1> Hello  </h1>
-      <Usereffect data ={data} />
+      <Userref/> 
     </div>
 
   )
